@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+    list-style: none;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#popup {
+    width: 350px !important;
+    height: 527px !important;
+    border-radius: 10px;
+    display: none;
+    z-index: 100;
+    background: white;
+    transform: translate(-50%, -100%);
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.head {
+    display: flex;
+    height: 65px;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #009662;
+    align-items: center;
+    color: white;
+}
+
+#address {
+    margin: 0 15px;
+}
+
+#close {
+    display: block;
+    width: 20px;
+    height: 39px;
+    cursor: pointer;
+}
+
+.reviews {
+    height: 202px;
+    border-bottom: 1px solid  #0096625e;
+    padding: 10px 15px;
+}
+
+.feedback__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback__item {
+    margin-bottom: 10px;
+}
+
+.feedback__user {
+    font-weight: bold;
+    font-size: 18px;
+    color: #009662;
+}
+
+.feedback-head {
+    color: #009662;
+
+}
+
+.feedback-block {
+    padding: 0px 10px;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+}
+.feedback-title {
+    color: #009662;
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.feedback__item {
+    height: 40px;
+}
+
+.form__input {
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form__textarea {
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    resize: none;
+    padding-left: 5px;
+}
+
+#add {
+    height: 30px;
+    width: 87px;
+    background-color: #009662;
+    color: white;
+    border-radius: 10px;
+    align-self: flex-end;
+    border: transparent;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

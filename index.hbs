@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Geo-app</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="map"></div>
+            <section id="popup">
+                <div class="head">
+                    <i class="fa fa-location-arrow"></i>
+                    <p id="address"></p>
+                    <i class="fa fa-times" id="close"></i>
+                </div>
+                <div class="reviews">
+                    <ul class="reviews__list"></ul>
+                </div>
+                <div class="feedback-block">
+                    <p class="feedback-title">Напишите свой отзыв</p>
+                        <input type="text" name="name" placeholder="Ваше имя" data-key="userName" class="form__input"/>
+                        <input type="text" name="location" name="place" placeholder="Укажите место" data-key="location" class="form__input location"/>
+                        <textarea name="review-text" placeholder="Ваш отзыв" data-key="commentText" class="form__textarea"></textarea>
+                    <button id="add">Добавить</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

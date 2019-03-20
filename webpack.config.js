@@ -15,7 +15,7 @@ rules.push({
 });
 
 module.exports = {
-    entry: './src/js/index.js',
+    entry: './src/map.js',
     output: {   
         filename: '[name].js',
         path: path.resolve('dist')
@@ -41,7 +41,7 @@ module.exports = {
         new ExtractTextPlugin('styles.css'),
         new HtmlPlugin({
             title: "Geo-app",
-            template: './src/template/index.hbs'
+            template: 'index.hbs'
           }),
         // new CleanWebpackPlugin(['dist'])
     ]

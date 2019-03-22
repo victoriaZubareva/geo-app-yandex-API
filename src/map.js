@@ -25,7 +25,7 @@ function init() {
     clusterer = new ymaps.Clusterer({
         preset: 'islands#invertedDarkGreenClusterIcons',
         clusterDisableClickZoom: true,
-        clusterBalloonContentLayout: 'cluster#balloonCarousel',
+        clusterBalloonContentLayout: 'cluster#balloonCarousel'
     });
 
     clusterer.add(myGeoObjects); // добавляем массив данных в кластеризатор
@@ -54,7 +54,7 @@ function init() {
     function clickMap() {
         myApiMap.geoObjects.events.add('click', e => {
             let target = e.get('target')
-    
+            
             if (target.options.getName() == 'geoObject') {
                 e.preventDefault();
                 let coords = target.geometry.getCoordinates();
@@ -118,7 +118,6 @@ function  clickBalloon() {
                 let reviews = getPlacemarks();
                 let coordsString = targetCoords.split(',');
                 let coords = coordsString.map(coord => {
-                    debugger;
                     return +coord;
                 });
 
@@ -126,7 +125,8 @@ function  clickBalloon() {
                     let review = reviews[i];
 
                     if (review.coords.join('') == coords.join('')) {
-                        showPopup(review);
+                        myApiMap.balloon.close(); // закрываем карусель и открываем попап с формой
+                        popupOpen(review);
                     }
                 }
             }
